@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">    
+<head>
+    <meta http-equiv="content-type" charset="utf-8">
+    <link rel="stylesheet" href="bbs_style.css">
+    <title>投稿フォーム</title>
+</head>
+<body>
+    <h1>投稿フォーム</h1>
+    <form method="post" action="add.php">
+        <dl>
+            <dt>ハンドルネーム</dt>
+            <dd><input type="text" name="handlename" required></dd>
+            <dt>メッセージ</dt>
+            <dd><textarea name="message" cols="40" rows="5" maxlength="500"></textarea></dd>
+            <dt>アップロード画像</dt>
+            <dd><input type="file" name="image"></dd>
+        </dl>
+        <input type="submit" value="送信" class="post">
+    </form>
+<br>
+<p><a href='index.php'>トップページへ戻る</a></p>
+</body>
+</html>
+
